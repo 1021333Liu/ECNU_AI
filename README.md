@@ -33,7 +33,9 @@ pip install -r requirements.txt
 ```
 ## 运行说明
 1.main.py文件可以直接打开后运行，需要注意的是改代码初次运行会自行下载ResNet-18和BERT预训练模型，请保持网络畅通，如果出现错误请尝试科学地更换一下网络。
+
 2.main+ablation.py文件设置了参数 mode，在代码引入环节后第一行已经进行了标注，消融实验结果时请按照注释对mode参数进行修改。
+
 3.本实验设置的batch_size=8，在NVIDIA GeForce RTX 3060显卡运行成功，如若您运行时出现CUDA out of memory，请尝试耐心查找batch_size参数（位于加载数据集部分）并将其修改（这样做可能会影响实验结果）。
 ## Attribution
 此代码的某些部分基于以下库：
